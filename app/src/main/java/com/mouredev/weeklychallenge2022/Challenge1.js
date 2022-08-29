@@ -20,13 +20,16 @@ package com.mouredev.weeklychallenge2022
  *
  */
 
-fun main() {
-    println(isAnagram("amor", "roma"))
-}
+var word = "poco";
+var word2 = "copo";
 
-private fun isAnagram(wordOne: String, wordTwo: String): Boolean {
-    if (wordOne.lowercase() == wordTwo.lowercase()) {
-        return false
-    }
-    return wordOne.lowercase().toCharArray().sortedArray().contentEquals(wordTwo.lowercase().toCharArray().sortedArray())
+var orden = [...word].sort();
+var orden2 = [...word2].sort();
+
+function anagrama(orden, orden2){
+  if(orden == orden2){
+    console.log("True");
+  } else {
+    console.log("False");
+  }
 }
